@@ -1,0 +1,20 @@
+{% extends 'base_layout.html'  %}
+{% block test %}
+
+    <br>
+
+    <form action="{% url 'Home1' %}" method="POST">
+      <label>Calculate:</label><br>
+      <input type="text" id="fname" name="fname" value=""><br>
+<!--      <label for="lname">Last name:</label><br>-->
+<!--      <input type="text" id="lname" name="lname" value="Doe"><br><br>-->
+<!--      <input type="submit" value="Submit">-->
+        {% csrf_token %}
+    </form>
+
+<!--        {%if content%}-->
+
+<!--                <h4> {{ content }} </h4>-->
+
+<!--        {%endif%}-->
+{% endblock %}
